@@ -47,4 +47,6 @@ body {
 iframe {
     margin-top: 20px;
     border-radius: 10px;
+    width: 90%;
+    max-width: 1100px;
 }
