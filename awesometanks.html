@@ -1,26 +1,36 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
     <title>Awesome Tanks</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Ruffle -->
     <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
 </head>
-<body style="margin:0;background:black;">
+<body>
 
-<div id="game"></div>
+<div class="navbar">
+    <h1>Class Source</h1>
+    <div>
+        <a href="index.html">Home</a>
+        <a href="games.html">All Games</a>
+    </div>
+</div>
+
+<h2>Awesome Tanks</h2>
+
+<div id="game-container" style="width:800px; height:600px; margin:auto;"></div>
 
 <script>
-window.RufflePlayer = window.RufflePlayer || {};
 window.addEventListener("load", () => {
     const ruffle = window.RufflePlayer.newest();
     const player = ruffle.createPlayer();
 
-    player.style.width = "100vw";
-    player.style.height = "100vh";
+    player.style.width = "800px";
+    player.style.height = "600px";
 
-    document.body.appendChild(player);
+    document.getElementById("game-container").appendChild(player);
 
-    // LOAD LOCAL FILE (THIS IS THE KEY)
     player.load("587840_awesomeTanks (2).swf");
 });
 </script>
