@@ -50,3 +50,15 @@ iframe {
     width: 90%;
     max-width: 1100px;
 }
+
+#game-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#game-container {
+    width: 800px;
+    height: 600px;
+}
