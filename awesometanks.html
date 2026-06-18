@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Awesome Tanks</title>
+    <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
+</head>
+<body style="margin:0;background:black;">
+
+<div id="game"></div>
+
+<script>
+window.RufflePlayer = window.RufflePlayer || {};
+window.addEventListener("load", () => {
+    const ruffle = window.RufflePlayer.newest();
+    const player = ruffle.createPlayer();
+
+    player.style.width = "100vw";
+    player.style.height = "100vh";
+
+    document.body.appendChild(player);
+
+    // LOAD LOCAL FILE (THIS IS THE KEY)
+    player.load("game.swf");
+});
+</script>
+
+</body>
+</html>
