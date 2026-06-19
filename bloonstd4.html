@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bloons TD 4</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
+</head>
+<body>
+
+<div class="navbar">
+    <h1>Class Source</h1>
+    <div>
+        <a href="index.html">Home</a>
+        <a href="games.html">All Games</a>
+    </div>
+</div>
+
+<h2 style="text-align:center;">Bloons TD 4</h2>
+
+<div id="game-wrapper">
+    <div id="game-container"></div>
+</div>
+
+<script>
+window.addEventListener("load", () => {
+    const ruffle = window.RufflePlayer.newest();
+    const player = ruffle.createPlayer();
+
+    player.style.width = "800px";
+    player.style.height = "600px";
+
+    document.getElementById("game-container").appendChild(player);
+
+    player.load("bloonstd4.swf");
+});
+</script>
+
+</body>
+</html>
