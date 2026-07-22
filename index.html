@@ -1,22 +1,53 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Class Source</title>
-    <link rel="stylesheet" href="style.css">
+  <title>Class Source</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div class="navbar">
+  <div class="navbar">
     <h1>Class Source</h1>
     <div>
-        <a href="index.html">Home</a>
-        <a href="games.html">All Games</a>
+      <a href="index.html">Home</a>
+      <a href="games.html">All Games</a>
+      <button id="authBtn" class="button auth-btn">Login</button>
     </div>
-</div>
+  </div>
 
-<div class="container">
+  <div class="container">
     <h2>Welcome to Class Source</h2>
-</div>
+  </div>
 
+  <!-- Login modal -->
+  <div id="loginOverlay" class="overlay">
+    <div class="modal">
+      <h3>Login</h3>
+      <form id="loginForm">
+        <input type="text" id="loginUsername" placeholder="Username" autocomplete="username" required>
+        <input type="password" id="loginPassword" placeholder="Password" autocomplete="current-password" required>
+        <p id="loginError" class="error-text"></p>
+        <div class="modal-buttons">
+          <button type="submit" class="button">Login</button>
+          <button type="button" id="loginCancel" class="button secondary">Cancel</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Overwrite confirmation modal -->
+  <div id="overwriteOverlay" class="overlay">
+    <div class="modal">
+      <h3>Would you like to overwrite your existing progress?</h3>
+      <p>This account already has saved progress. You can overwrite it with this
+         device's progress, or keep the saved progress and load it here instead.</p>
+      <div class="modal-buttons">
+        <button id="overwriteYes" class="button">Yes, overwrite</button>
+        <button id="overwriteNo" class="button secondary">No, keep saved progress</button>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="auth.js"></script>
 </body>
 </html>
