@@ -62,3 +62,110 @@ iframe {
     width: 800px;
     height: 600px;
 }
+
+#loginBtn {
+
+background:#222;
+color:white;
+border:none;
+padding:10px 20px;
+border-radius:8px;
+cursor:pointer;
+
+}
+
+
+
+#loginOverlay {
+
+
+display:none;
+
+position:fixed;
+
+top:0;
+left:0;
+
+width:100%;
+height:100%;
+
+background:rgba(0,0,0,0.8);
+
+justify-content:center;
+
+align-items:center;
+
+
+}
+
+
+
+.loginBox {
+
+
+background:#111;
+
+padding:30px;
+
+border-radius:15px;
+
+width:300px;
+
+
+}
+
+
+
+.loginBox input {
+
+
+display:block;
+
+width:90%;
+
+padding:12px;
+
+margin:10px auto;
+
+background:#222;
+
+border:none;
+
+color:white;
+
+border-radius:6px;
+
+
+}
+
+
+
+.loginBox button {
+
+
+width:100%;
+
+padding:12px;
+
+background:#333;
+
+color:white;
+
+border:none;
+
+border-radius:8px;
+
+cursor:pointer;
+
+
+}
+
+
+
+.loginBox button:hover {
+
+
+background:#555;
+
+
+}
