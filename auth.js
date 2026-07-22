@@ -17,12 +17,13 @@ import {
 // YOUR FIREBASE CONFIG HERE
 
 const firebaseConfig = {
-    apiKey: "YOUR_API_KEY",
-    authDomain: "YOUR_AUTH_DOMAIN",
-    projectId: "YOUR_PROJECT_ID",
-    storageBucket: "YOUR_BUCKET",
-    messagingSenderId: "YOUR_ID",
-    appId: "YOUR_APP_ID"
+  apiKey: "AIzaSyAn5mmUCbEX0AWNoLb-Ouw--7EmPoz_g2w",
+  authDomain: "class-source.firebaseapp.com",
+  projectId: "class-source",
+  storageBucket: "class-source.firebasestorage.app",
+  messagingSenderId: "644444299307",
+  appId: "1:644444299307:web:d726002ce4a289baa94a6e",
+  measurementId: "G-G2T9GPLKEL"
 };
 
 
