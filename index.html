@@ -19,35 +19,6 @@
     <h2>Welcome to Class Source</h2>
   </div>
 
-  <!-- Login modal -->
-  <div id="loginOverlay" class="overlay">
-    <div class="modal">
-      <h3>Login</h3>
-      <form id="loginForm">
-        <input type="text" id="loginUsername" placeholder="Username" autocomplete="username" required>
-        <input type="password" id="loginPassword" placeholder="Password" autocomplete="current-password" required>
-        <p id="loginError" class="error-text"></p>
-        <div class="modal-buttons">
-          <button type="submit" class="button">Login</button>
-          <button type="button" id="loginCancel" class="button secondary">Cancel</button>
-        </div>
-      </form>
-    </div>
-  </div>
-
-  <!-- Overwrite confirmation modal -->
-  <div id="overwriteOverlay" class="overlay">
-    <div class="modal">
-      <h3>Would you like to overwrite your existing progress?</h3>
-      <p>This account already has saved progress. You can overwrite it with this
-         device's progress, or keep the saved progress and load it here instead.</p>
-      <div class="modal-buttons">
-        <button id="overwriteYes" class="button">Yes, overwrite</button>
-        <button id="overwriteNo" class="button secondary">No, keep saved progress</button>
-      </div>
-    </div>
-  </div>
-
   <script type="module" src="auth.js"></script>
 </body>
 </html>
